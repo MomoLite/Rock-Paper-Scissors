@@ -52,5 +52,23 @@ function playRound(humanChoice, computerChoice) {
     console.log();
 }
 
+function playGame() {
+    let humanSelection;
+    let computerSelection;
 
+    while (humanScore !== 5 && computerScore !== 5) {
+        humanSelection = getHumanChoice();
+        computerSelection = getComputerChoice();
 
+        playRound(humanSelection, computerSelection);
+    }
+
+    if (humanScore === 5) {
+        console.log("Congrats! You beat the computer.");
+    }
+    else {
+        console.log("Sorrys, you lost to the computer.");
+    }
+}
+
+playGame();
