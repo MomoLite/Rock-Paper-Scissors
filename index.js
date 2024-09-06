@@ -10,3 +10,10 @@ function getComputerChoice() {
             return "scissors";
     }
 }
+
+
+function getHumanChoice() {
+    return prompt("What's your move? ");
+}
+
+console.log(getHumanChoice());
