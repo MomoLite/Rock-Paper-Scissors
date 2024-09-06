@@ -1,3 +1,6 @@
+var humanScore = 0;
+var computerScore = 0;
+
 function getComputerChoice() {
     switch (Math.floor(Math.random() * 3)) {
         case 0:
@@ -16,4 +19,4 @@ function getHumanChoice() {
     return prompt("What's your move? ");
 }
 
-console.log(getHumanChoice());
+
